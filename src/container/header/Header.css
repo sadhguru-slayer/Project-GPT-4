@@ -46,6 +46,7 @@
     border: none;
     border: 1px solid var(--color-footer);
     border-radius: 8px;
+    color:#fff;
 }
 .gpt4__header-content__input button{
     flex-shrink: 1;
