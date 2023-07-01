@@ -1,0 +1,127 @@
+*{
+    font-family: var(--font-family);
+}
+.gpt4__header{
+    display: flex;
+    margin: 1rem;
+}
+.gpt4__header-content{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.gpt4__header-content__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.gpt4__header-content__right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.gradient__text{
+    font-weight: 1000;
+    font-size: 4rem;
+}
+.gpt4__header-content__left p{
+    color: var(--color-text);
+    font-size: 1rem;
+}
+.gpt4__header-content__input{
+    display: flex;
+    gap:0.5rem;
+    height: auto;
+    width: 40rem;
+    width: 100%;
+}
+.gpt4__header-content__input input{
+    flex: 1;
+    background: var(--color-blog);
+    outline: none;
+    padding: 0.5rem;
+    border: none;
+    border: 1px solid var(--color-footer);
+    border-radius: 8px;
+}
+.gpt4__header-content__input button{
+    flex-shrink: 1;
+    background: orangered;
+    padding: 0.5rem;
+    border: none;
+    border: 1px solid var(--color-footer);
+    border-radius: 8px;
+    width: auto;
+    max-width: 8rem;
+}
+
+.gpt4__header-image img{
+    width: auto;
+    max-width: 20rem;
+    border-radius: 50px;
+}
+@media screen and (max-width:1050px){
+    /* .gpt4__header-content__input input,.gpt4__header-content__input button{
+        padding-top: 0.2rem;
+    } */
+    .gradient__text{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:992px) {
+    .gpt4__header-content__input input,.gpt4__header-content__input button{
+        /* padding-top: 0.2rem; */
+        font-size: 12px;
+    }
+    .gradient__text{
+        font-size: 3rem;
+    }
+    .gpt4__header-content__left p{
+
+        font-size: 15px;
+    }
+    
+    /*  */
+}
+@media screen and (max-width:807px){
+    .gpt4__header-content__input{
+        flex-direction: column;
+    }
+    .gpt4__header-content__left p{
+
+        font-size: 10px;
+    }
+    .gpt4__header-content__left{
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width:510px){
+    .gpt4__header-content__input{
+        flex-direction: row;
+    }
+    .gpt4__header-content__input input,.gpt4__header-content__input button{
+        font-size: 10px;
+    }
+    .gpt4__header-content{
+        flex-direction: column;
+    }
+    .gpt4__header-image img{
+        display: block;
+        border-radius: 10%;
+        height: auto;
+        width: 70%;
+    }
+    .gpt4__header-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__text{
+        font-size: 10px;
+    }
+}

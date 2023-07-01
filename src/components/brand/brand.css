@@ -1,0 +1,26 @@
+*{
+    padding: 1rem;
+}
+.gpt4__brand{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gpt4__brand div{
+    margin: 0.5rem;
+    max-width: 120px;
+    max-height: auto;
+}
+.section_padding{
+    padding:1rem 3rem;
+}
+
+@media screen and (max-width:510px){
+    .gpt4__brand{
+        gap: 0.5rem;
+    }
+    .gpt4__brand img{
+        width: 40px;
+    }
+}
